@@ -23,7 +23,7 @@ func Export(dataList []map[string]string, headList []string, fileName string) {
 		}
 
 		// the header column is set on row 1st
-		f.SetCellValue("Sheet1", row+"1", k)
+		f.SetCellValue("Sheet1", row+"1", v)
 		newHeadList[v] = row
 	}
 
