@@ -19,7 +19,7 @@ func Export(dataList []map[string]string, headList []string, fileName string) {
 		if k > 25 {
 			// I think 27*26 columns is enough
 			times, offset := k / 26, k % 26
-			row = string(A+times-1) + string(A+offset)
+			row = string(A+times-1) + string(A+offset+0)
 		}
 
 		// the header column is set on row 1st
